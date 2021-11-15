@@ -14,12 +14,9 @@ const duration2 = intervalToDuration({ start: startAfter, end });
 
 const Home: NextPage = () => {
   // countdown every second via setTimeout()
-  const [now, setNow] = useState(new Date());
-  const { days, hours, minutes, seconds } = intervalToDuration({
-    start: now,
-    end,
-  });
-  setTimeout(() => setNow(new Date()), 990);
+  const [start, setStart] = useState(new Date());
+  const { days, hours, minutes, seconds } = intervalToDuration({ start, end });
+  setTimeout(() => setStart(new Date()), 990);
 
   return (
     <div>
