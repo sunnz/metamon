@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     start: now,
     end,
   });
-  setTimeout(() => setNow(new Date()), 1000);
+  setTimeout(() => setNow(new Date()), 990);
 
   return (
     <div>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <Alert variant="primary">metamon</Alert>
       </Container>
 
-      <Container>
+      <Container className="fs-1">
         <Row>
           <Col>{days}</Col>
           <Col>{hours}</Col>
