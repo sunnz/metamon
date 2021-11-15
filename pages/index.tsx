@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   setTimeout(() => setStart(new Date()), 990);
 
   return (
-    <div>
+    <div className="position-absolute vw-100 translate-middle top-50 start-50">
       <Head>
         <title>countdown</title>
         <link rel="icon" href="/favicon.ico" />
