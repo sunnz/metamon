@@ -25,17 +25,29 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container>
-        <h1 className="header">metamon</h1>
-        <Alert variant="primary">metamon</Alert>
-      </Container>
-
-      <Container className="fs-1">
+      <Container className="w-75">
         <Row>
-          <Col>{days}</Col>
-          <Col>{hours}</Col>
-          <Col>{minutes}</Col>
-          <Col>{seconds}</Col>
+          <Col>
+            <span className="fs-1">{days}</span>
+            <small className="text-muted">days</small>
+          </Col>
+          <Col>
+            <span className="fs-1">{hours}</span>
+            <small className="text-muted">hours</small>
+          </Col>
+          <Col>
+            <span className="fs-1">{minutes}</span>
+            <small className="text-muted">minutes</small>
+          </Col>
+          <Col>
+            <span className="fs-1">{seconds}</span>
+            <small className="text-muted">seconds</small>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p className="text-muted">to go!</p>
+          </Col>
         </Row>
       </Container>
 
