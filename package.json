@@ -1,6 +1,11 @@
 {
   "name": "metamon",
   "private": true,
+  "author": "sun (https://github.com/sunnz)",
+  "browserslist": [
+    "last 1 ff version",
+    "last 2 and_chr version"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
