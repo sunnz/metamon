@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { Alert, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { intervalToDuration } from "date-fns";
 import { useState } from "react";
 
@@ -21,8 +20,8 @@ const Home: NextPage = () => {
   return (
     <div style={{ marginTop: "40vh" }}>
       <Head>
-        <title>countdown</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>countdown for metamon!</title>
+        <link rel="icon" href="/parrot.gif" type="image/gif" />
       </Head>
 
       <Container className="w-75">
