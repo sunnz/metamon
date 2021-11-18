@@ -6,12 +6,14 @@ import { intervalToDuration } from "date-fns";
 import { useState } from "react";
 import parrotGif from "../public/parrot.gif";
 
-const startBefore = new Date("2021-11-13T23:00+11:00");
-const startAfter = new Date("2022-01-18T10:00+11:00");
+// the date to count down to
 const end = new Date("2021-12-11T12:25+11:00");
 
-const duration1 = intervalToDuration({ start: startBefore, end });
-const duration2 = intervalToDuration({ start: startAfter, end });
+// generate some static durations for testing
+const startBefore = new Date("2021-11-13T23:00+11:00");
+const startAfter = new Date("2022-01-18T10:00+11:00");
+const durationBefore = intervalToDuration({ start: startBefore, end });
+const durationAfter = intervalToDuration({ start: startAfter, end });
 
 const Home: NextPage = () => {
   // countdown every second via setTimeout()
@@ -68,18 +70,20 @@ const Home: NextPage = () => {
         </Row>
       </Container>
 
-      <Container className="d-none">
-        <Row>
-          <Col>
-            before:
-            <pre>{JSON.stringify(duration1, null, 2)}</pre>
-          </Col>
-          <Col>
-            after:
-            <pre>{JSON.stringify(duration2, null, 2)}</pre>
-          </Col>
-        </Row>
-      </Container>
+      {false && (
+        <Container>
+          <Row>
+            <Col>
+              before:
+              <pre>{JSON.stringify(durationBefore, null, 2)}</pre>
+            </Col>
+            <Col>
+              after:
+              <pre>{JSON.stringify(durationAfter, null, 2)}</pre>
+            </Col>
+          </Row>
+        </Container>
+      )}
     </div>
   );
 };
