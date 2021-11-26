@@ -25,13 +25,41 @@ const Home: NextPage = () => {
   const isCountingDown = start < end;
 
   return (
-    <div style={{ marginTop: "40vh" }}>
+    <div style={{ height: "100vh", paddingTop: "40vh" }}>
       <Head>
         <title>countdown for metamon!</title>
         <link rel="icon" href="/parrot.gif" type="image/gif" />
       </Head>
 
-      <Container className="w-75">
+      <video
+        playsInline={true}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        style={{
+          position: "absolute",
+          top: 0,
+          zIndex: 0,
+          height: "100vh",
+          width: "100vw",
+          objectFit: "cover",
+        }}
+      >
+        <source src="/plane.mp4" type="video/mp4" />
+      </video>
+
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          zIndex: 0,
+          height: "100vh",
+          width: "100vw",
+          backgroundColor: "rgba(25, 25, 25, 0.8)",
+        }}
+      />
+
+      <Container className="w-75" style={{ position: "relative", zIndex: 10 }}>
         <Row>
           <Col>
             <span className="fs-1">{days}</span>
