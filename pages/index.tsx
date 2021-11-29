@@ -7,7 +7,7 @@ import { useState } from "react";
 import parrotGif from "../public/parrot.gif";
 
 // the date to count down to
-const end = new Date("2021-12-11T12:25+11:00");
+const end = new Date("2021-12-02T12:25+11:00");
 
 // generate some static durations for testing
 const startBefore = new Date("2021-11-13T23:00+11:00");
