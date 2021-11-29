@@ -1,6 +1,7 @@
 {
   "name": "metamon",
   "private": true,
+  "license": "BSD",
   "author": "sun (https://github.com/sunnz)",
   "browserslist": [
     "last 1 ff version",
